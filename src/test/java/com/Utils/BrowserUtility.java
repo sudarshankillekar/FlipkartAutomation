@@ -58,7 +58,7 @@ public class BrowserUtility {
 		
 	}
 	
-	public void MaximizeWindow() {
+	public void  maximizeWindow() {
 	wd.manage().window().maximize();
 	}
 	
@@ -81,21 +81,21 @@ public class BrowserUtility {
 
 
 	
-	public String CaptureTextBefore(By locator) {
+	public String captureTextBefore(By locator) {
 		  WebElement element = wd.findElement(locator);
           String text = element.getText();
           System.out.println("Price before addition: " + text);
           return element.getText();
 	}
 	
-	public String CaptureTextAfter(By locator) {
+	public String captureTextAfter(By locator) {
 		  WebElement element = wd.findElement(locator);
         String AfterAdd = element.getText();
         System.out.println("Price After addition: " + AfterAdd);
         return element.getText();
 	}
 	
-    public void IncreaseValue(By locator, String number) {
+    public void increaseValue(By locator, String number) {
     	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		element.clear();
 		element.sendKeys(number);
