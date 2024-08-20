@@ -17,7 +17,10 @@ public class BrowserUtility {
 	public WebDriver getWd() {
 		return wd;
 	}
+    
+	
 
+	
 	public BrowserUtility() {
 	}
 
