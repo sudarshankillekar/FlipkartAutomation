@@ -14,9 +14,6 @@ public class HandlingDate {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.easemytrip.com/bus/");
-//	    Thread.sleep(5000);
-//	    Alert alert = driver.switchTo().alert();
-//        alert.accept();
 		WebElement element = driver.findElement(By.id("datepicker"));
         	element.click();
         	Thread.sleep(5000);
